@@ -1,0 +1,14 @@
+
+{     
+    "plugins": ["theme-api","ace", "etoc","splitter","expandable-chapters", "-highlight", "sunlight-highlighter"],
+    "pluginsConfig": {
+        "expandable-chapters":{},
+        "theme-api": {
+            "theme": "dark"
+        },
+        "sunlight-highlighter": {
+            "theme": "dark",
+            "lineNumber": true
+        }
+    }
+}
