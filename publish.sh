@@ -1,16 +1,20 @@
+#!/bin/bash
+
+# remove gitbook old things
+rm -rf _book
+rm -rf docs
+
+# gitbook init
 gitbook install && gitbook build
 
-git checkout gh-pages
+# build pages
+mkdir docs
+cp -R _book/* docs/
 
-git pull origin gh-pages --rebase
-
-cp -R _book/* .
-
-git clean -fx node_modules
+# delete things
 git clean -fx _book
 
+# upload
 git add .
-
-git commit -a -m "Publish Doc"
-git push origin gh-pages
-git checkout master
+git commit -a -m "update docs"
+git push -u origin master
