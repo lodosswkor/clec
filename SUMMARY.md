@@ -30,3 +30,22 @@
 * [표준입출력 stdio.h](pages/lec02/09.md)
 * [QUIZ](pages/lec02/ex02.md)
 
+## - 조건/반복문과 배열
+
+* [논리표현식](pages/lec03/01.md)
+  * [관계연산자](pages/lec03/01.md)
+  * [동등연산자](pages/lec03/02.md)
+  * [논리연산자](pages/lec03/03.md)
+  * [Boolean 자료형](pages/lec03/04.md)
+
+* [조건제어문](pages/lec03/05.md)
+  * [if~else](pages/lec03/05.md)
+  * [switch~case](pages/lec03/06.md)
+  * [삼항연산자](pages/lec03/07.md)
+  
+* [반복문](pages/lec03/08.md)
+  * [while](pages/lec03/08.md)
+  * [do while](pages/lec03/09.md)
+  * [for](pages/lec03/10.md)
+  * [continue, break 그리고 goto](pages/lec03/11.md)
+* [QUIZ](pages/lec03/quiz.md)
