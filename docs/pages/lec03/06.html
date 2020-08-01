@@ -1,0 +1,898 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>switch~case · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-etoc/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sunlight-highlighter/sunlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-api/theme-api.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="07.html" />
+    
+    
+    <link rel="prev" href="05.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    소개
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">- C언어 들어가기</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../lec01/01.html">
+            
+                <a href="../lec01/01.html">
+            
+                    
+                    프로그램 언어의 이해
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../lec01/02.html">
+            
+                <a href="../lec01/02.html">
+            
+                    
+                    VS2019 다운로드 및 설치
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../lec01/03.html">
+            
+                <a href="../lec01/03.html">
+            
+                    
+                    VS2019 기본사용법
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../lec01/04.html">
+            
+                <a href="../lec01/04.html">
+            
+                    
+                    C언어의 기본구조
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../lec01/05.html">
+            
+                <a href="../lec01/05.html">
+            
+                    
+                    Git을 이용한 소스관리 기초
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">- C언어 사용하기</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../lec02/01.html">
+            
+                <a href="../lec02/01.html">
+            
+                    
+                    서식지정자(Format Specifiers)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../lec02/02.html">
+            
+                <a href="../lec02/02.html">
+            
+                    
+                    이스케이프 시퀀스(Escape Sequence)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../lec02/ex01.html">
+            
+                <a href="../lec02/ex01.html">
+            
+                    
+                    서식지정자/이스케이프 시퀀스 QUIZ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../lec02/03.html">
+            
+                <a href="../lec02/03.html">
+            
+                    
+                    변수와 상수, 그리고 기본자료형
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="../lec02/04.html">
+            
+                <a href="../lec02/04.html">
+            
+                    
+                    자료형
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="../lec02/05.html">
+            
+                <a href="../lec02/05.html">
+            
+                    
+                    변수(Variables)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.3" data-path="../lec02/06.html">
+            
+                <a href="../lec02/06.html">
+            
+                    
+                    상수(Constants)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.4" data-path="../lec02/07.html">
+            
+                <a href="../lec02/07.html">
+            
+                    
+                    자료형의 변환(형변환:Type Casting)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../lec02/08-1.html">
+            
+                <a href="../lec02/08-1.html">
+            
+                    
+                    연산자
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="../lec02/08-1.html">
+            
+                <a href="../lec02/08-1.html">
+            
+                    
+                    대입연산자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="../lec02/08-2.html">
+            
+                <a href="../lec02/08-2.html">
+            
+                    
+                    산술연산자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3" data-path="../lec02/08-3.html">
+            
+                <a href="../lec02/08-3.html">
+            
+                    
+                    복합산술연산자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.4" data-path="../lec02/08-4.html">
+            
+                <a href="../lec02/08-4.html">
+            
+                    
+                    증감연산자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.5" data-path="../lec02/08-5.html">
+            
+                <a href="../lec02/08-5.html">
+            
+                    
+                    비트연산
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.6" data-path="../lec02/08-6.html">
+            
+                <a href="../lec02/08-6.html">
+            
+                    
+                    쉬프트연산
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../lec02/09.html">
+            
+                <a href="../lec02/09.html">
+            
+                    
+                    표준입출력 stdio.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../lec02/ex02.html">
+            
+                <a href="../lec02/ex02.html">
+            
+                    
+                    QUIZ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">- 조건/반복문과 배열</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="01.html">
+            
+                <a href="01.html">
+            
+                    
+                    논리표현식
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="01.html">
+            
+                <a href="01.html">
+            
+                    
+                    관계연산자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="02.html">
+            
+                <a href="02.html">
+            
+                    
+                    동등연산자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="03.html">
+            
+                <a href="03.html">
+            
+                    
+                    논리연산자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="04.html">
+            
+                <a href="04.html">
+            
+                    
+                    Boolean 자료형
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="05.html">
+            
+                <a href="05.html">
+            
+                    
+                    조건제어문
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="05.html">
+            
+                <a href="05.html">
+            
+                    
+                    if~else
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.2.2" data-path="06.html">
+            
+                <a href="06.html">
+            
+                    
+                    switch~case
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" data-path="07.html">
+            
+                <a href="07.html">
+            
+                    
+                    삼항연산자
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="08.html">
+            
+                <a href="08.html">
+            
+                    
+                    반복문
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1" data-path="08.html">
+            
+                <a href="08.html">
+            
+                    
+                    while
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.2" data-path="09.html">
+            
+                <a href="09.html">
+            
+                    
+                    do while
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.3" data-path="10.html">
+            
+                <a href="10.html">
+            
+                    
+                    for
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.4" data-path="11.html">
+            
+                <a href="11.html">
+            
+                    
+                    continue, break 그리고 goto
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="quiz.html">
+            
+                <a href="quiz.html">
+            
+                    
+                    QUIZ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >switch~case</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="switch--case-&#xBB38;">switch ~ case &#xBB38;</h1>
+<hr>
+<pre><code class="lang-c"><div class="sunlight-container sunlight-theme-dark"><div class="sunlight-code-container"><pre class="sunlight-highlight-cpp sunlight-highlighted"><span class="sunlight-cpp"><span class="sunlight-keyword">switch</span><span class="sunlight-punctuation">(</span><span class="sunlight-punctuation">&#xBCC0;</span><span class="sunlight-punctuation">&#xC218;</span><span class="sunlight-operator">/</span><span class="sunlight-punctuation">&#xAC12;</span><span class="sunlight-punctuation">)</span>&#xA0;<span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">case</span>&#xA0;<span class="sunlight-punctuation">&#xAC12;</span><span class="sunlight-number">1</span><span class="sunlight-operator">:</span>&#xA0;
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-punctuation">&#xBCC0;</span><span class="sunlight-punctuation">&#xC218;</span>&#xA0;<span class="sunlight-operator">==</span>&#xA0;<span class="sunlight-punctuation">&#xAC12;</span><span class="sunlight-number">1</span><span class="sunlight-punctuation">&#xC77C;</span><span class="sunlight-punctuation">&#xB584;</span>&#xA0;<span class="sunlight-punctuation">&#xC2E4;</span><span class="sunlight-punctuation">&#xD589;</span><span class="sunlight-punctuation">&#xB420;</span>&#xA0;<span class="sunlight-punctuation">&#xB0B4;</span><span class="sunlight-punctuation">&#xC6A9;</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">break</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">case</span>&#xA0;<span class="sunlight-punctuation">&#xAC12;</span><span class="sunlight-number">2</span><span class="sunlight-operator">:</span>&#xA0;
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-punctuation">&#xBCC0;</span><span class="sunlight-punctuation">&#xC218;</span>&#xA0;<span class="sunlight-operator">==</span>&#xA0;<span class="sunlight-punctuation">&#xAC12;</span><span class="sunlight-number">2</span><span class="sunlight-punctuation">&#xC77C;</span><span class="sunlight-punctuation">&#xB54C;</span>&#xA0;<span class="sunlight-punctuation">&#xC2E4;</span><span class="sunlight-punctuation">&#xD589;</span><span class="sunlight-punctuation">&#xB420;</span>&#xA0;<span class="sunlight-punctuation">&#xB0B4;</span><span class="sunlight-punctuation">&#xC6A9;</span><span class="sunlight-punctuation">;</span>&#xA0;
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">break</span><span class="sunlight-punctuation">;</span>
+<span class="sunlight-ellipsis">...</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">default</span><span class="sunlight-operator">:</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-punctuation">&#xC704;</span><span class="sunlight-punctuation">&#xC758;</span>&#xA0;<span class="sunlight-keyword">case</span><span class="sunlight-punctuation">&#xC5D0;</span>&#xA0;<span class="sunlight-punctuation">&#xB9CC;</span><span class="sunlight-punctuation">&#xC871;</span><span class="sunlight-punctuation">&#xD558;</span><span class="sunlight-punctuation">&#xC9C0;</span>&#xA0;<span class="sunlight-punctuation">&#xC54A;</span><span class="sunlight-punctuation">&#xC744;</span><span class="sunlight-punctuation">&#xB54C;</span>&#xA0;<span class="sunlight-punctuation">&#xB0B4;</span><span class="sunlight-punctuation">&#xC6A9;</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">break</span><span class="sunlight-punctuation">;</span>&#xA0;
+<span class="sunlight-punctuation">}</span>
+</span></pre></div></div></code></pre>
+<ul>
+<li>&#xC608;&#xC81C; 1</li>
+</ul>
+<pre><code class="lang-c"><div class="sunlight-container sunlight-theme-dark"><div class="sunlight-code-container"><pre class="sunlight-highlight-cpp sunlight-highlighted"><span class="sunlight-cpp">&#xA0;<span class="sunlight-comment">//---&#xA0;MS&#xA0;C&#xC5D0;&#xC11C;&#xB9CC;&#xA0;&#xC0AC;&#xC6A9;&#xA0;---------------</span>
+<span class="sunlight-preprocessorDirective">#ifdef&#xA0;_MSC_VER</span>
+&#xA0;<span class="sunlight-preprocessorDirective">#define&#xA0;_CRT_SECURE_NO_WARNINGS</span>
+<span class="sunlight-preprocessorDirective">#endif&#xA0;</span>
+<span class="sunlight-comment">//--------------------------------</span>
+<span class="sunlight-preprocessorDirective">#include&#xA0;&lt;stdio.h&gt;</span>
+
+<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">main</span><span class="sunlight-punctuation">(</span><span class="sunlight-punctuation">)</span>
+<span class="sunlight-punctuation">{</span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">num</span><span class="sunlight-punctuation">;</span>
+
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;&#xBA87;&#xA0;&#xBC88;&#xA0;&#xBA54;&#xB274;&#xB97C;&#xA0;&#xC120;&#xD0DD;&#xD558;&#xC2DC;&#xACA0;&#xC2B5;&#xB2C8;&#xAE4C;?\n&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;\t(1)&#xC9DC;&#xC7A5;&#xBA74;\n&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;\t(2)&#xC9EC;&#xBF55;\n&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;\t(3)&#xD0D5;&#xC218;&#xC721;\n&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;&#xBC88;&#xD638;&#xA0;&#xC120;&#xD0DD;:&#xA0;&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">scanf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;%d&quot;</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-operator">&amp;</span><span class="sunlight-ident">num</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;-----------------------\n&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">switch</span>&#xA0;<span class="sunlight-punctuation">(</span><span class="sunlight-ident">num</span><span class="sunlight-punctuation">)</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">case</span>&#xA0;<span class="sunlight-number">1</span><span class="sunlight-operator">:</span>&#xA0;
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;&#xC9DC;&#xC7A5;&#xBA74;&#xC740;&#xA0;5000&#xC6D0;&#xC785;&#xB2C8;&#xB2E4;.\n&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">break</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">case</span>&#xA0;<span class="sunlight-number">2</span><span class="sunlight-operator">:</span>&#xA0;
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;&#xC9EC;&#xBF55;&#xC740;&#xA0;6000&#xC6D0;&#xC785;&#xB2C8;&#xB2E4;.\n&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">break</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">case</span>&#xA0;<span class="sunlight-number">3</span><span class="sunlight-operator">:</span>&#xA0;
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;&#xD0D5;&#xC218;&#xC721;&#xC740;&#xA0;20000&#xC6D0;&#xC785;&#xB2C8;&#xB2E4;.\n&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">break</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">default</span><span class="sunlight-operator">:</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;&#xC5C6;&#xB294;&#xA0;&#xBA54;&#xB274;&#xC785;&#xB2C8;&#xB2E4;.\n&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-punctuation">}</span>
+
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;&#xAC10;&#xC0AC;&#xD569;&#xB2C8;&#xB2E4;.\n&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">return</span>&#xA0;<span class="sunlight-number">0</span><span class="sunlight-punctuation">;</span>
+<span class="sunlight-punctuation">}</span>
+</span></pre></div></div></code></pre>
+<ul>
+<li>&#xC608;&#xC81C; 2</li>
+</ul>
+<pre><code class="lang-c"><div class="sunlight-container sunlight-theme-dark"><div class="sunlight-code-container"><pre class="sunlight-highlight-cpp sunlight-highlighted"><span class="sunlight-cpp">&#xA0;<span class="sunlight-comment">//---&#xA0;MS&#xA0;C&#xC5D0;&#xC11C;&#xB9CC;&#xA0;&#xC0AC;&#xC6A9;&#xA0;---------------</span>
+<span class="sunlight-preprocessorDirective">#ifdef&#xA0;_MSC_VER</span>
+&#xA0;<span class="sunlight-preprocessorDirective">#define&#xA0;_CRT_SECURE_NO_WARNINGS</span>
+<span class="sunlight-preprocessorDirective">#endif&#xA0;</span>
+<span class="sunlight-comment">//--------------------------------</span>
+<span class="sunlight-preprocessorDirective">#include&#xA0;&lt;stdio.h&gt;</span>
+
+<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">main</span><span class="sunlight-punctuation">(</span><span class="sunlight-punctuation">)</span>
+<span class="sunlight-punctuation">{</span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">char</span>&#xA0;<span class="sunlight-ident">ch</span><span class="sunlight-punctuation">;</span>
+
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;&#xBB34;&#xC2A8;&#xA0;&#xACFC;&#xC77C;&#xC744;&#xA0;&#xC88B;&#xC544;&#xD558;&#xC138;&#xC694;?\n&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;\t(A)pple\n&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;\t(B)anana\n&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;\t(G)rape\n&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;&#xC54C;&#xD30C;&#xBCB3;&#xA0;&#xCCAB;&#xAE00;&#xC790;&#xA0;&#xC120;&#xD0DD;:&#xA0;&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">scanf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;%c&quot;</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-operator">&amp;</span><span class="sunlight-ident">ch</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;-----------------------\n&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">switch</span>&#xA0;<span class="sunlight-punctuation">(</span><span class="sunlight-ident">ch</span><span class="sunlight-punctuation">)</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">case</span>&#xA0;<span class="sunlight-char">&apos;A&apos;</span><span class="sunlight-operator">:</span>&#xA0;
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;&#xC0AC;&#xACFC;&#xB294;&#xA0;1000&#xC6D0;&#xC785;&#xB2C8;&#xB2E4;.\n&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">break</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">case</span>&#xA0;<span class="sunlight-char">&apos;B&apos;</span><span class="sunlight-operator">:</span>&#xA0;
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;&#xBC14;&#xB098;&#xB098;&#xB294;&#xA0;2000&#xC6D0;&#xC785;&#xB2C8;&#xB2E4;.\n&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">break</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">case</span>&#xA0;<span class="sunlight-char">&apos;G&apos;</span><span class="sunlight-operator">:</span>&#xA0;
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;&#xD3EC;&#xB3C4;&#xB294;&#xA0;5000&#xC6D0;&#xC785;&#xB2C8;&#xB2E4;.\n&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">break</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">default</span><span class="sunlight-operator">:</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;&#xC5C6;&#xB294;&#xA0;&#xACFC;&#xC77C;&#xC785;&#xB2C8;&#xB2E4;.\n&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-punctuation">}</span>
+
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;&#xAC10;&#xC0AC;&#xD569;&#xB2C8;&#xB2E4;.\n&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">return</span>&#xA0;<span class="sunlight-number">0</span><span class="sunlight-punctuation">;</span>
+<span class="sunlight-punctuation">}</span>
+</span></pre></div></div></code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"switch~case","level":"4.2.2","depth":2,"next":{"title":"삼항연산자","level":"4.2.3","depth":2,"path":"pages/lec03/07.md","ref":"pages/lec03/07.md","articles":[]},"previous":{"title":"if~else","level":"4.2.1","depth":2,"path":"pages/lec03/05.md","ref":"pages/lec03/05.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api","ace","etoc","splitter","expandable-chapters","-highlight","sunlight-highlighter"],"pluginsConfig":{"ace":{},"etoc":{"h2lb":3,"header":1,"maxdepth":4,"mindepth":3,"notoc":false},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-api":{"languages":[],"split":true,"theme":"dark"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sunlight-highlighter":{"lineNumbers":false,"theme":"dark","lineNumber":true},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pages/lec03/06.md","mtime":"2020-07-31T14:39:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-31T14:41:16.859Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-etoc/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
+        
+    
+
+    </body>
+</html>
+
