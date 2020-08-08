@@ -1,6 +1,7 @@
 # Summary
 
 * [소개](README.md)
+* [c언어 레퍼런스](http://www.cplusplus.com/reference/cmath/)
 
 ## - C언어 들어가기  
 
@@ -65,5 +66,16 @@
   * [인수/변수의 범위(Scope)](pages/lec05/02.md)
   * [가변인자를 가지는 함수](pages/lec05/03.md)
   * [함수의 재귀호출](pages/lec05/04.md)
-  * [표준함수의 활용](pages/lec05/05.md)
-  * [QUIZ](pages/lec05/Quiz.md)
+  * [파일입출력 함수](pages/lec05/05.md)
+* [QUIZ](pages/lec05/Quiz.md)
+
+
+* [포인터의 이해와 활용](pages/lec06/01.md)
+  * [메모리 구조와 포인터의 이해](pages/lec06/01.md)
+  * [포인터 변수의 선언과 사용](pages/lec06/02.md)
+  * [범용 포인터 (void)](pages/lec06/03.md)
+  * [함수인자로서의 포인터](pages/lec06/07.md)
+  * [배열과 포인터](pages/lec06/04.md)
+  * [함수 포인터](pages/lec06/06.md)
+  * [동적 메모리할당](pages/lec06/05.md)
+* [QUIZ](pages/lec06/quiz.md)
