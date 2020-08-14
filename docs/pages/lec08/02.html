@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>함수 포인터 · GitBook</title>
+        <title>소스의 모듈화 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -77,10 +77,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="05.html" />
     
-    
-    <link rel="prev" href="04.html" />
+    <link rel="prev" href="01.html" />
     
 
     </head>
@@ -875,9 +873,9 @@
         
         
     
-        <li class="chapter " data-level="6.1" data-path="01.html">
+        <li class="chapter " data-level="6.1" data-path="../lec06/01.html">
             
-                <a href="01.html">
+                <a href="../lec06/01.html">
             
                     
                     포인터의 이해와 활용
@@ -889,9 +887,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="6.1.1" data-path="01.html">
+        <li class="chapter " data-level="6.1.1" data-path="../lec06/01.html">
             
-                <a href="01.html">
+                <a href="../lec06/01.html">
             
                     
                     메모리 구조와 포인터의 이해
@@ -902,9 +900,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.2" data-path="02.html">
+        <li class="chapter " data-level="6.1.2" data-path="../lec06/02.html">
             
-                <a href="02.html">
+                <a href="../lec06/02.html">
             
                     
                     포인터 변수의 선언과 사용
@@ -915,9 +913,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.3" data-path="03.html">
+        <li class="chapter " data-level="6.1.3" data-path="../lec06/03.html">
             
-                <a href="03.html">
+                <a href="../lec06/03.html">
             
                     
                     범용 포인터 (void)
@@ -928,9 +926,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.4" data-path="07.html">
+        <li class="chapter " data-level="6.1.4" data-path="../lec06/07.html">
             
-                <a href="07.html">
+                <a href="../lec06/07.html">
             
                     
                     함수인자로서의 포인터
@@ -941,9 +939,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.5" data-path="04.html">
+        <li class="chapter " data-level="6.1.5" data-path="../lec06/04.html">
             
-                <a href="04.html">
+                <a href="../lec06/04.html">
             
                     
                     배열과 포인터
@@ -954,9 +952,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="6.1.6" data-path="06.html">
+        <li class="chapter " data-level="6.1.6" data-path="../lec06/06.html">
             
-                <a href="06.html">
+                <a href="../lec06/06.html">
             
                     
                     함수 포인터
@@ -967,9 +965,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.7" data-path="05.html">
+        <li class="chapter " data-level="6.1.7" data-path="../lec06/05.html">
             
-                <a href="05.html">
+                <a href="../lec06/05.html">
             
                     
                     동적 메모리할당
@@ -985,9 +983,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.2" data-path="quiz.html">
+        <li class="chapter " data-level="6.2" data-path="../lec06/quiz.html">
             
-                <a href="quiz.html">
+                <a href="../lec06/quiz.html">
             
                     
                     QUIZ
@@ -1102,9 +1100,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.2" data-path="../lec08/01.html">
+        <li class="chapter " data-level="7.2" data-path="01.html">
             
-                <a href="../lec08/01.html">
+                <a href="01.html">
             
                     
                     전처리기, 소스의 모듈화
@@ -1116,9 +1114,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="7.2.1" data-path="../lec08/01.html">
+        <li class="chapter " data-level="7.2.1" data-path="01.html">
             
-                <a href="../lec08/01.html">
+                <a href="01.html">
             
                     
                     전처리기와 매크로
@@ -1129,9 +1127,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.2.2" data-path="../lec08/02.html">
+        <li class="chapter active" data-level="7.2.2" data-path="02.html">
             
-                <a href="../lec08/02.html">
+                <a href="02.html">
             
                     
                     소스의 모듈화
@@ -1177,7 +1175,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >함수 포인터</a>
+        <a href="../.." >소스의 모듈화</a>
     </h1>
 </div>
 
@@ -1192,54 +1190,75 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#xD568;&#xC218;&#xD3EC;&#xC778;&#xD130;">&#xD568;&#xC218;&#xD3EC;&#xC778;&#xD130;</h1>
+                                <h1 id="&#xC18C;&#xC2A4;&#xC758;-&#xBAA8;&#xB4C8;&#xD654;-&#xC18C;&#xC2A4;&#xBD84;&#xD560;">&#xC18C;&#xC2A4;&#xC758; &#xBAA8;&#xB4C8;&#xD654; (&#xC18C;&#xC2A4;&#xBD84;&#xD560;)</h1>
 <!-- toc --><div id="toc" class="toc">
 
 <ul>
-<li><a href="#&#xD568;&#xC218;&#xC758;-&#xBA54;&#xBAA8;&#xB9AC;-&#xC8FC;&#xC18C;">&#xD568;&#xC218;&#xC758; &#xBA54;&#xBAA8;&#xB9AC; &#xC8FC;&#xC18C;</a></li>
-<li><a href="#&#xD568;&#xC218;&#xD3EC;&#xC778;&#xD130;">&#xD568;&#xC218;&#xD3EC;&#xC778;&#xD130;</a></li>
+<li><a href="#extern-&#xC73C;&#xB85C;-&#xC811;&#xADFC;">extern &#xC73C;&#xB85C; &#xC811;&#xADFC;</a></li>
+<li><a href="#&#xD574;&#xB354;&#xD30C;&#xC77C;&#xB85C;-&#xBAA8;&#xB4C8;&#xD654;">&#xD574;&#xB354;&#xD30C;&#xC77C;&#xB85C; &#xBAA8;&#xB4C8;&#xD654;</a></li>
+<li><a href="#&#xD574;&#xB354;&#xD30C;&#xC77C;-&#xC911;&#xBCF5;&#xBC29;&#xC9C0;">&#xD574;&#xB354;&#xD30C;&#xC77C; &#xC911;&#xBCF5;&#xBC29;&#xC9C0;</a></li>
 </ul>
 
 </div><!-- tocstop -->
 <hr>
-<pre><code class="lang-c"><div class="sunlight-container sunlight-theme-dark"><div class="sunlight-code-container"><pre class="sunlight-highlight-cpp sunlight-highlighted"><span class="sunlight-cpp"><span class="sunlight-punctuation">&#xBC18;</span><span class="sunlight-punctuation">&#xD658;</span><span class="sunlight-punctuation">&#xC790;</span><span class="sunlight-punctuation">&#xB8CC;</span><span class="sunlight-punctuation">&#xD615;</span>&#xA0;<span class="sunlight-punctuation">(</span><span class="sunlight-operator">*</span><span class="sunlight-punctuation">&#xD3EC;</span><span class="sunlight-punctuation">&#xC778;</span><span class="sunlight-punctuation">&#xD130;</span><span class="sunlight-punctuation">&#xBCC0;</span><span class="sunlight-punctuation">&#xC218;</span>&#xA0;<span class="sunlight-punctuation">&#xC774;</span><span class="sunlight-punctuation">&#xB984;</span><span class="sunlight-punctuation">)</span>&#xA0;<span class="sunlight-punctuation">(</span><span class="sunlight-punctuation">&#xC778;</span><span class="sunlight-punctuation">&#xC790;</span><span class="sunlight-number">1</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-punctuation">&#xC778;</span><span class="sunlight-punctuation">&#xC790;</span><span class="sunlight-number">2</span><span class="sunlight-ellipsis">...</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
-</span></pre></div></div></code></pre>
-<h3 id="&#xD568;&#xC218;&#xC758;-&#xBA54;&#xBAA8;&#xB9AC;-&#xC8FC;&#xC18C;">&#xD568;&#xC218;&#xC758; &#xBA54;&#xBAA8;&#xB9AC; &#xC8FC;&#xC18C;</h3>
-<pre><code class="lang-c"><div class="sunlight-container sunlight-theme-dark"><div class="sunlight-code-container"><pre class="sunlight-highlight-cpp sunlight-highlighted"><span class="sunlight-cpp"><span class="sunlight-preprocessorDirective">#include&#xA0;&lt;stdio.h&gt;</span>
+<h3 id="extern-&#xC73C;&#xB85C;-&#xC811;&#xADFC;">extern &#xC73C;&#xB85C; &#xC811;&#xADFC;</h3>
+<pre><code class="lang-c"><div class="sunlight-container sunlight-theme-dark"><div class="sunlight-code-container"><pre class="sunlight-highlight-cpp sunlight-highlighted"><span class="sunlight-cpp"><span class="sunlight-comment">//&#xA0;main.c&#xA0;</span>
+
+<span class="sunlight-preprocessorDirective">#include&#xA0;&lt;stdio.h&gt;</span>
+
+<span class="sunlight-ident">extern</span>&#xA0;<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">sum</span><span class="sunlight-punctuation">;</span>&#xA0;
+<span class="sunlight-ident">extern</span>&#xA0;<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">add</span><span class="sunlight-punctuation">(</span><span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">x</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">y</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
 
 <span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">main</span><span class="sunlight-punctuation">(</span><span class="sunlight-punctuation">)</span>&#xA0;<span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">sum</span>&#xA0;<span class="sunlight-operator">=</span>&#xA0;<span class="sunlight-ident">add</span><span class="sunlight-punctuation">(</span><span class="sunlight-number">200</span><span class="sunlight-operator">,</span><span class="sunlight-number">10</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;%d\n\n&quot;</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-ident">sum</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">return</span>&#xA0;<span class="sunlight-number">0</span><span class="sunlight-punctuation">;</span>
+<span class="sunlight-punctuation">}</span>
 
-&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;%p&#xA0;%p&#xA0;%p\n&quot;</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-ident">main</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-ident">scanf</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
-&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">return</span>&#xA0;<span class="sunlight-number">0</span><span class="sunlight-punctuation">;</span>&#xA0;
+<span class="sunlight-comment">//&#xA0;lib.c&#xA0;</span>
+<span class="sunlight-preprocessorDirective">#include&#xA0;&lt;stdio.h&gt;</span>
 
+<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">sum</span>&#xA0;<span class="sunlight-operator">=</span>&#xA0;<span class="sunlight-number">0</span><span class="sunlight-punctuation">;</span>&#xA0;
+
+<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">add</span><span class="sunlight-punctuation">(</span><span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">x</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">y</span><span class="sunlight-punctuation">)</span>&#xA0;<span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">return</span>&#xA0;<span class="sunlight-ident">x</span>&#xA0;<span class="sunlight-operator">+</span>&#xA0;<span class="sunlight-ident">y</span><span class="sunlight-punctuation">;</span>
 <span class="sunlight-punctuation">}</span>
 </span></pre></div></div></code></pre>
-<h3 id="&#xD568;&#xC218;&#xD3EC;&#xC778;&#xD130;">&#xD568;&#xC218;&#xD3EC;&#xC778;&#xD130;</h3>
-<pre><code class="lang-c"><div class="sunlight-container sunlight-theme-dark"><div class="sunlight-code-container"><pre class="sunlight-highlight-cpp sunlight-highlighted"><span class="sunlight-cpp"><span class="sunlight-preprocessorDirective">#include&#xA0;&lt;stdio.h&gt;</span>
+<pre><code>!) visual studio &#xC5D0;&#xC11C;&#xB294; &#xD558;&#xB098;&#xC758; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC5D0; &#xD3EC;&#xD568;&#xB41C; &#xD30C;&#xC77C;&#xB4E4;&#xC758; &#xACBD;&#xC6B0; extern &#xC5C6;&#xC774; &#xC0AC;&#xC6A9; &#xAC00;&#xB2A5;&#xD558;&#xB2E4;. 
+</code></pre><h3 id="&#xD574;&#xB354;&#xD30C;&#xC77C;&#xB85C;-&#xBAA8;&#xB4C8;&#xD654;">&#xD574;&#xB354;&#xD30C;&#xC77C;&#xB85C; &#xBAA8;&#xB4C8;&#xD654;</h3>
+<pre><code class="lang-c"><div class="sunlight-container sunlight-theme-dark"><div class="sunlight-code-container"><pre class="sunlight-highlight-cpp sunlight-highlighted"><span class="sunlight-cpp"><span class="sunlight-comment">//&#xA0;main.c&#xA0;</span>
 
-<span class="sunlight-keyword">void</span>&#xA0;<span class="sunlight-ident">add</span><span class="sunlight-punctuation">(</span>&#xA0;<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">num1</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">num2</span>&#xA0;<span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+<span class="sunlight-preprocessorDirective">#include&#xA0;&lt;stdio.h&gt;</span>
 
 <span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">main</span><span class="sunlight-punctuation">(</span><span class="sunlight-punctuation">)</span>&#xA0;<span class="sunlight-punctuation">{</span>
-
-&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">x</span>&#xA0;<span class="sunlight-operator">=</span>&#xA0;<span class="sunlight-number">1</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-ident">y</span>&#xA0;<span class="sunlight-operator">=</span>&#xA0;<span class="sunlight-number">10</span><span class="sunlight-punctuation">;</span>&#xA0;
-
-&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">void</span>&#xA0;<span class="sunlight-punctuation">(</span><span class="sunlight-operator">*</span><span class="sunlight-ident">fp</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">(</span><span class="sunlight-keyword">int</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-keyword">int</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>&#xA0;
-
-&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;add&#xD568;&#xC218;&#xC758;&#xA0;&#xC8FC;&#xC18C;&#xA0;:&#xA0;%p\n&quot;</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-ident">add</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>&#xA0;
-&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;&#xD568;&#xC218;&#xA0;&#xD3EC;&#xC778;&#xD130;&#xC758;&#xA0;&#xC8FC;&#xC18C;&#xA0;:&#xA0;%p\n&quot;</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-operator">&amp;</span><span class="sunlight-ident">fp</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>&#xA0;
-&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;&#xD568;&#xC218;&#xA0;&#xD3EC;&#xC778;&#xD130;&#xAC00;&#xA0;&#xAC00;&#xB974;&#xD0A4;&#xB294;&#xA0;&#xC8FC;&#xC18C;&#xA0;:&#xA0;%p\n&quot;</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-ident">fp</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
-
-&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">fp</span>&#xA0;<span class="sunlight-operator">=</span>&#xA0;<span class="sunlight-ident">add</span><span class="sunlight-punctuation">;</span>&#xA0;
-
-&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;&#xD568;&#xC218;&#xA0;&#xD3EC;&#xC778;&#xD130;&#xAC00;&#xA0;&#xAC00;&#xB974;&#xD0A4;&#xB294;&#xA0;&#xC8FC;&#xC18C;&#xA0;:&#xA0;%p\n&quot;</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-ident">fp</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
-
-&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">fp</span><span class="sunlight-punctuation">(</span>&#xA0;<span class="sunlight-ident">x</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-ident">y</span>&#xA0;<span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>&#xA0;
-&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">return</span>&#xA0;<span class="sunlight-number">0</span><span class="sunlight-punctuation">;</span>&#xA0;
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">sum</span>&#xA0;<span class="sunlight-operator">=</span>&#xA0;<span class="sunlight-ident">add</span><span class="sunlight-punctuation">(</span><span class="sunlight-number">200</span><span class="sunlight-operator">,</span><span class="sunlight-number">10</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;%d\n\n&quot;</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-ident">sum</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">return</span>&#xA0;<span class="sunlight-number">0</span><span class="sunlight-punctuation">;</span>
 <span class="sunlight-punctuation">}</span>
 
-<span class="sunlight-keyword">void</span>&#xA0;<span class="sunlight-ident">add</span><span class="sunlight-punctuation">(</span><span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">num1</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">num2</span><span class="sunlight-punctuation">)</span>&#xA0;<span class="sunlight-punctuation">{</span>
-&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;%d&#xA0;+&#xA0;%d&#xA0;=&#xA0;%d&quot;</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-ident">num1</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-ident">num2</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-ident">num1</span><span class="sunlight-operator">+</span><span class="sunlight-ident">num2</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+<span class="sunlight-comment">//&#xA0;lib.h&#xA0;</span>
+<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">add</span><span class="sunlight-punctuation">(</span><span class="sunlight-keyword">int</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-keyword">int</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+
+
+<span class="sunlight-comment">//&#xA0;lib.c</span>
+<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">add</span><span class="sunlight-punctuation">(</span><span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">x</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">y</span><span class="sunlight-punctuation">)</span>&#xA0;<span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;<span class="sunlight-keyword">return</span>&#xA0;<span class="sunlight-ident">x</span>&#xA0;<span class="sunlight-operator">+</span>&#xA0;<span class="sunlight-ident">y</span><span class="sunlight-punctuation">;</span>&#xA0;
 <span class="sunlight-punctuation">}</span>
+</span></pre></div></div></code></pre>
+<h3 id="&#xD574;&#xB354;&#xD30C;&#xC77C;-&#xC911;&#xBCF5;&#xBC29;&#xC9C0;">&#xD574;&#xB354;&#xD30C;&#xC77C; &#xC911;&#xBCF5;&#xBC29;&#xC9C0;</h3>
+<pre><code class="lang-c"><div class="sunlight-container sunlight-theme-dark"><div class="sunlight-code-container"><pre class="sunlight-highlight-cpp sunlight-highlighted"><span class="sunlight-cpp"><span class="sunlight-comment">//&#xA0;lib.h&#xA0;</span>
+<span class="sunlight-preprocessorDirective">#ifndef&#xA0;__LIB_H__</span>
+<span class="sunlight-preprocessorDirective">#define&#xA0;__LIB_H__&#xA0;</span>
+
+<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">add</span><span class="sunlight-punctuation">(</span>&#xA0;<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+
+<span class="sunlight-preprocessorDirective">#endif</span>
+
+<span class="sunlight-comment">//&#xA0;or&#xA0;</span>
+<span class="sunlight-comment">//&#xA0;lib.h&#xA0;</span>
+<span class="sunlight-preprocessorDirective">#pragma&#xA0;once</span>
+
+<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">add</span>&#xA0;<span class="sunlight-punctuation">(</span>&#xA0;<span class="sunlight-keyword">int</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
 </span></pre></div></div></code></pre>
 <p><br>
 <br></p>
@@ -1276,7 +1295,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"함수 포인터","level":"6.1.6","depth":2,"next":{"title":"동적 메모리할당","level":"6.1.7","depth":2,"path":"pages/lec06/05.md","ref":"pages/lec06/05.md","articles":[]},"previous":{"title":"배열과 포인터","level":"6.1.5","depth":2,"path":"pages/lec06/04.md","ref":"pages/lec06/04.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api","ace","etoc","splitter","expandable-chapters","-highlight","sunlight-highlighter"],"pluginsConfig":{"ace":{},"etoc":{"h2lb":3,"header":1,"maxdepth":4,"mindepth":3,"notoc":false},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-api":{"languages":[],"split":true,"theme":"dark"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sunlight-highlighter":{"lineNumbers":false,"theme":"dark","lineNumber":true},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pages/lec06/06.md","mtime":"2020-08-08T13:18:41.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-14T14:05:32.989Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"소스의 모듈화","level":"7.2.2","depth":2,"previous":{"title":"전처리기와 매크로","level":"7.2.1","depth":2,"path":"pages/lec08/01.md","ref":"pages/lec08/01.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api","ace","etoc","splitter","expandable-chapters","-highlight","sunlight-highlighter"],"pluginsConfig":{"ace":{},"etoc":{"h2lb":3,"header":1,"maxdepth":4,"mindepth":3,"notoc":false},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-api":{"languages":[],"split":true,"theme":"dark"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sunlight-highlighter":{"lineNumbers":false,"theme":"dark","lineNumber":true},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pages/lec08/02.md","mtime":"2020-08-14T14:04:23.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-14T14:05:32.989Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
