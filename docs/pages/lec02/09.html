@@ -1,0 +1,710 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>표준입출력 stdio.h · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-etoc/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sunlight-highlighter/sunlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-api/theme-api.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ex02.html" />
+    
+    
+    <link rel="prev" href="08-6.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    소개
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <a target="_blank" href="http://www.cplusplus.com/reference/cmath/">
+            
+                    
+                    c언어 레퍼런스
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <a target="_blank" href="https://www.tinkercad.com/">
+            
+                    
+                    Thinkercad
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">- C언어 들어가기</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../lec01/01.html">
+            
+                <a href="../lec01/01.html">
+            
+                    
+                    프로그램 언어의 이해
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../lec01/02.html">
+            
+                <a href="../lec01/02.html">
+            
+                    
+                    VS2019 다운로드 및 설치
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../lec01/03.html">
+            
+                <a href="../lec01/03.html">
+            
+                    
+                    VS2019 기본사용법
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../lec01/04.html">
+            
+                <a href="../lec01/04.html">
+            
+                    
+                    C언어의 기본구조
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../lec01/06.html">
+            
+                <a href="../lec01/06.html">
+            
+                    
+                    맛보기 코딩해보기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../lec01/05.html">
+            
+                <a href="../lec01/05.html">
+            
+                    
+                    Git을 이용한 소스관리 기초
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">- C언어 사용하기</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="01.html">
+            
+                <a href="01.html">
+            
+                    
+                    서식지정자(Format Specifiers)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="02.html">
+            
+                <a href="02.html">
+            
+                    
+                    이스케이프 시퀀스(Escape Sequence)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="ex01.html">
+            
+                <a href="ex01.html">
+            
+                    
+                    서식지정자/이스케이프 시퀀스 QUIZ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="03.html">
+            
+                <a href="03.html">
+            
+                    
+                    변수와 상수, 그리고 기본자료형
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="04.html">
+            
+                <a href="04.html">
+            
+                    
+                    자료형
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="05.html">
+            
+                <a href="05.html">
+            
+                    
+                    변수(Variables)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.3" data-path="06.html">
+            
+                <a href="06.html">
+            
+                    
+                    상수(Constants)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.4" data-path="07.html">
+            
+                <a href="07.html">
+            
+                    
+                    자료형의 변환(형변환:Type Casting)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="08-1.html">
+            
+                <a href="08-1.html">
+            
+                    
+                    연산자
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="08-1.html">
+            
+                <a href="08-1.html">
+            
+                    
+                    대입연산자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="08-2.html">
+            
+                <a href="08-2.html">
+            
+                    
+                    산술연산자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3" data-path="08-3.html">
+            
+                <a href="08-3.html">
+            
+                    
+                    복합산술연산자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.4" data-path="08-4.html">
+            
+                <a href="08-4.html">
+            
+                    
+                    증감연산자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.5" data-path="08-5.html">
+            
+                <a href="08-5.html">
+            
+                    
+                    비트연산
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.6" data-path="08-6.html">
+            
+                <a href="08-6.html">
+            
+                    
+                    쉬프트연산
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.6" data-path="09.html">
+            
+                <a href="09.html">
+            
+                    
+                    표준입출력 stdio.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="ex02.html">
+            
+                <a href="ex02.html">
+            
+                    
+                    QUIZ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >표준입출력 stdio.h</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#xD45C;&#xC900;&#xC785;&#xCD9C;&#xB825;-stdioh">&#xD45C;&#xC900;&#xC785;&#xCD9C;&#xB825; stdio.h</h1>
+<!-- toc --><div id="toc" class="toc">
+
+<ul>
+<li><a href="#&#xCD9C;&#xB825;-stdout">&#xCD9C;&#xB825; (stdout)</a><ul>
+<li><a href="#putchar">putchar()</a></li>
+<li><a href="#puts">puts()</a></li>
+<li><a href="#printf">printf()</a></li>
+</ul>
+</li>
+<li><a href="#-&#xC785;&#xB825;-stdin">- &#xC785;&#xB825; (stdin)</a><ul>
+<li><a href="#getchar">getchar()</a></li>
+<li><a href="#gets">gets()</a></li>
+<li><a href="#scanf">scanf()</a></li>
+</ul>
+</li>
+</ul>
+
+</div><!-- tocstop -->
+<hr>
+<h3 id="&#xCD9C;&#xB825;-stdout">&#xCD9C;&#xB825; (stdout)</h3>
+<h4 id="putchar">putchar()</h4>
+<ul>
+<li>&#xD55C;&#xBB38;&#xC790;&#xB97C; &#xCD9C;&#xB825;&#xD55C;&#xB2E4;.</li>
+</ul>
+<pre><code class="lang-c"><div class="sunlight-container sunlight-theme-dark"><div class="sunlight-code-container"><pre class="sunlight-highlight-cpp sunlight-highlighted"><span class="sunlight-cpp"><span class="sunlight-preprocessorDirective">#include&#xA0;&lt;stdio.h&gt;</span>
+<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">main</span><span class="sunlight-punctuation">(</span><span class="sunlight-punctuation">)</span>&#xA0;<span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">putchar</span><span class="sunlight-punctuation">(</span><span class="sunlight-char">&apos;db&apos;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">return</span>&#xA0;<span class="sunlight-number">0</span><span class="sunlight-punctuation">;</span>&#xA0;
+<span class="sunlight-punctuation">}</span>
+</span></pre></div></div></code></pre>
+<h4 id="puts">puts()</h4>
+<ul>
+<li>&#xBB38;&#xC790;&#xC5F4; (char &#xBC30;&#xC5F4;/&#xD3EC;&#xC778;&#xD130;)&#xB97C; &#xCD9C;&#xB825;&#xD55C;&#xB2E4;. </li>
+</ul>
+<pre><code class="lang-c"><div class="sunlight-container sunlight-theme-dark"><div class="sunlight-code-container"><pre class="sunlight-highlight-cpp sunlight-highlighted"><span class="sunlight-cpp"><span class="sunlight-preprocessorDirective">#include&#xA0;&lt;stdio.h&gt;</span>
+<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">main</span><span class="sunlight-punctuation">(</span><span class="sunlight-punctuation">)</span>&#xA0;<span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">puts</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;Hello&#xA0;World!&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">return</span>&#xA0;<span class="sunlight-number">0</span><span class="sunlight-punctuation">;</span>&#xA0;
+<span class="sunlight-punctuation">}</span>
+</span></pre></div></div></code></pre>
+<h4 id="printf">printf()</h4>
+<pre><code class="lang-c"><div class="sunlight-container sunlight-theme-dark"><div class="sunlight-code-container"><pre class="sunlight-highlight-cpp sunlight-highlighted"><span class="sunlight-cpp"><span class="sunlight-preprocessorDirective">#include&#xA0;&lt;stdio.h&gt;</span>
+<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">main</span><span class="sunlight-punctuation">(</span><span class="sunlight-punctuation">)</span>&#xA0;<span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-char">&apos;&#xB098;&#xC758;&#xA0;&#xC774;&#xB984;&#xC740;&#xA0;%s&#xA0;&#xC785;&#xB2C8;&#xB2E4;.&apos;</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-string">&quot;&#xC774;&#xC885;&#xC11D;&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">return</span>&#xA0;<span class="sunlight-number">0</span><span class="sunlight-punctuation">;</span>&#xA0;
+<span class="sunlight-punctuation">}</span>
+</span></pre></div></div></code></pre>
+<h3 id="-&#xC785;&#xB825;-stdin">- &#xC785;&#xB825; (stdin)</h3>
+<h4 id="getchar">getchar()</h4>
+<ul>
+<li>&#xD55C;&#xBB38;&#xC790;&#xB97C; &#xC77D;&#xC5B4;&#xB4E4;&#xC778;&#xB2E4;.</li>
+</ul>
+<pre><code class="lang-c"><div class="sunlight-container sunlight-theme-dark"><div class="sunlight-code-container"><pre class="sunlight-highlight-cpp sunlight-highlighted"><span class="sunlight-cpp"><span class="sunlight-preprocessorDirective">#include&#xA0;&lt;stdio.h&gt;</span>
+
+<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">main</span><span class="sunlight-punctuation">(</span><span class="sunlight-punctuation">)</span>&#xA0;<span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">char</span>&#xA0;<span class="sunlight-ident">ch</span>&#xA0;<span class="sunlight-operator">=</span>&#xA0;<span class="sunlight-number">0</span><span class="sunlight-punctuation">;</span>&#xA0;
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;&#xBB38;&#xC790;&#xB97C;&#xA0;&#xC785;&#xB825;&#xD558;&#xC138;&#xC694;.&#xA0;:&#xA0;&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">ch</span>&#xA0;<span class="sunlight-operator">=</span>&#xA0;<span class="sunlight-ident">getchar</span><span class="sunlight-punctuation">(</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>&#xA0;
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;&#xBB38;&#xC790;&#xA0;:&#xA0;%c&#xA0;\n&quot;</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-ident">ch</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">return</span>&#xA0;<span class="sunlight-number">0</span><span class="sunlight-punctuation">;</span>&#xA0;
+<span class="sunlight-punctuation">}</span>
+</span></pre></div></div></code></pre>
+<h4 id="gets">gets()</h4>
+<ul>
+<li>&#xBB38;&#xC790;&#xC5F4;&#xC744; &#xC785;&#xB825;&#xBC1B;&#xB294;&#xB2E4;. </li>
+</ul>
+<pre><code class="lang-c"><div class="sunlight-container sunlight-theme-dark"><div class="sunlight-code-container"><pre class="sunlight-highlight-cpp sunlight-highlighted"><span class="sunlight-cpp"><span class="sunlight-preprocessorDirective">#include&#xA0;&lt;stdio.h&gt;</span>
+
+<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">main</span><span class="sunlight-punctuation">(</span><span class="sunlight-punctuation">)</span>&#xA0;<span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">char</span>&#xA0;<span class="sunlight-ident">input</span><span class="sunlight-punctuation">[</span><span class="sunlight-number">256</span><span class="sunlight-punctuation">]</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;&#xBB38;&#xC790;&#xC5F4;&#xC744;&#xA0;&#xC785;&#xB825;&#xD558;&#xC138;&#xC694;.&#xA0;:&#xA0;&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">gets</span><span class="sunlight-punctuation">(</span><span class="sunlight-ident">input</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;&#xBB38;&#xC790;&#xC5F4;&#xA0;:&#xA0;%s&#xA0;\n&quot;</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-ident">input</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">return</span>&#xA0;<span class="sunlight-number">0</span><span class="sunlight-punctuation">;</span>
+<span class="sunlight-punctuation">}</span>
+</span></pre></div></div></code></pre>
+<h4 id="scanf">scanf()</h4>
+<pre><code class="lang-c"><div class="sunlight-container sunlight-theme-dark"><div class="sunlight-code-container"><pre class="sunlight-highlight-cpp sunlight-highlighted"><span class="sunlight-cpp"><span class="sunlight-comment">//---&#xA0;MS&#xA0;C&#xC5D0;&#xC11C;&#xB9CC;&#xA0;&#xC0AC;&#xC6A9;&#xA0;---------------</span>
+<span class="sunlight-preprocessorDirective">#ifdef&#xA0;_MSC_VER</span>
+&#xA0;<span class="sunlight-preprocessorDirective">#define&#xA0;_CRT_SECURE_NO_WARNINGS</span>
+<span class="sunlight-preprocessorDirective">#endif&#xA0;</span>
+<span class="sunlight-comment">//--------------------------------</span>
+
+<span class="sunlight-preprocessorDirective">#include&#xA0;&lt;stdio.h&gt;</span>
+
+<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">main</span><span class="sunlight-punctuation">(</span><span class="sunlight-punctuation">)</span>&#xA0;<span class="sunlight-punctuation">{</span>
+
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">char</span>&#xA0;<span class="sunlight-ident">input</span><span class="sunlight-punctuation">[</span><span class="sunlight-number">256</span><span class="sunlight-punctuation">]</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;&#xBB38;&#xC790;&#xC5F4;&#xC744;&#xA0;&#xC785;&#xB825;&#xD558;&#xC138;&#xC694;.&#xA0;:&#xA0;&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">scanf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;%s&quot;</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-ident">input</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">printf</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;&#xBB38;&#xC790;&#xC5F4;&#xA0;:&#xA0;%s&#xA0;&quot;</span><span class="sunlight-operator">,</span>&#xA0;<span class="sunlight-ident">input</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">return</span>&#xA0;<span class="sunlight-number">0</span><span class="sunlight-punctuation">;</span>
+<span class="sunlight-punctuation">}</span>
+</span></pre></div></div></code></pre>
+<p><br></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"표준입출력 stdio.h","level":"3.6","depth":1,"next":{"title":"QUIZ","level":"3.7","depth":1,"path":"pages/lec02/ex02.md","ref":"pages/lec02/ex02.md","articles":[]},"previous":{"title":"쉬프트연산","level":"3.5.6","depth":2,"path":"pages/lec02/08-6.md","ref":"pages/lec02/08-6.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api","ace","etoc","splitter","expandable-chapters","-highlight","sunlight-highlighter"],"pluginsConfig":{"ace":{},"etoc":{"h2lb":3,"header":1,"maxdepth":4,"mindepth":3,"notoc":false},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-api":{"languages":[],"split":true,"theme":"dark"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"sunlight-highlighter":{"lineNumbers":false,"theme":"dark","lineNumber":true},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pages/lec02/09.md","mtime":"2020-07-30T03:40:32.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-06T00:23:50.917Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-etoc/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
+        
+    
+
+    </body>
+</html>
+
