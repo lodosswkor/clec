@@ -54,3 +54,10 @@
   * [continue, break 그리고 goto](pages/lec03/11.md)
 * [QUIZ](pages/lec03/quiz.md)
   
+* [배열과 문자열](pages/lec04/01.md)
+  * [배열의 선언과 사용](pages/lec04/01.md)
+  * [다차원 배열 선언과 사용](pages/lec04/02.md)
+  * [문자배열과 문자열](pages/lec04/03.md)
+  * [문자열 함수](pages/lec04/04.md)
+  * [배열정렬 알고리즘](pages/lec04/05.md)
+* [QUIZ](pages/lec04/quiz.md)
