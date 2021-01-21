@@ -53,7 +53,7 @@ int main() {
 <img src="/images/lec03/quiz.png" width="100%" style="border:1px solid black;">
 
 
-<b>3. 주사위 두개를 던져서 합이 6의될 경우의 수를 출력하라 </b>
+<b>3. 주사위 두개를 던져서 합이 6의될 경우의 수를 출력하라 </b>  
 <img src="/images/quiz/01.png" width="300" style="border:1px solid black;">  
 
 
@@ -62,6 +62,6 @@ int main() {
 
 
 <b>5. 아래와 같은 결과를 출력하는 "피라미드 생성기"를 작성하라 </b>  
-<img src="/images/quiz/02.png" width="100%" style="border:1px solid black;">  
+<img src="/images/quiz/03.png" width="100%" style="border:1px solid black;">  
   
 
