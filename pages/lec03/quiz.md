@@ -53,8 +53,15 @@ int main() {
 <img src="/images/lec03/quiz.png" width="100%" style="border:1px solid black;">
 
 
-<b>3. 도서관리 프로그램 메인 만들기</b>
+<b>3. 주사위 두개를 던져서 합이 6의될 경우의 수를 출력하라 </b>
+<img src="/images/quiz/01.png" width="300" style="border:1px solid black;">  
 
-아래의 그림과 같이 동작하는 프로그램을 작성하라. 
 
-<img src="/images/lec03/quiz02.png" width="100%" style="border:1px solid black;">
+<b>4. 조건문과 반복문으로 "최대값"을 입력받아 이를 출력하고, 역출력 후에, 홀수의 합계를 출력하는 프로그램을 만들어라 </b>  
+<img src="/images/quiz/02.png" width="100%" style="border:1px solid black;">  
+
+
+<b>5. 아래와 같은 결과를 출력하는 "피라미드 생성기"를 작성하라 </b>  
+<img src="/images/quiz/02.png" width="100%" style="border:1px solid black;">  
+  
+
