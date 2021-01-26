@@ -54,6 +54,8 @@
   * [continue, break 그리고 goto](pages/lec03/11.md)
 * [QUIZ](pages/lec03/quiz.md)
   
+# 배열과 함수 
+
 * [배열과 문자열](pages/lec04/01.md)
   * [배열의 선언과 사용](pages/lec04/01.md)
   * [다차원 배열 선언과 사용](pages/lec04/02.md)
@@ -61,3 +63,11 @@
   * [문자열 함수](pages/lec04/04.md)
   * [배열정렬 알고리즘](pages/lec04/05.md)
 * [QUIZ](pages/lec04/quiz.md)
+
+* [함수의 활용](pages/lec05/01.md)
+  * [함수의 구조와 종류](pages/lec05/01.md)
+  * [인수/변수의 범위(Scope)](pages/lec05/02.md)
+  * [가변인자를 가지는 함수](pages/lec05/03.md)
+  * [함수의 재귀호출](pages/lec05/04.md)
+  * [파일입출력 함수](pages/lec05/05.md)
+* [QUIZ](pages/lec05/Quiz.md)
