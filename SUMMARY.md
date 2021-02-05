@@ -85,3 +85,18 @@
   * [함수 포인터](pages/lec06/06.md)
   * [동적 메모리할당](pages/lec06/05.md)
 * [QUIZ](pages/lec06/quiz.md)
+
+
+## - 구조체와 공용체 소스모듈화
+
+* [구조체와 공용체, typedef](pages/lec07/01.md)
+  * [구조체](pages/lec07/01.md)
+  * [구조체 배열](pages/lec07/02.md)
+  * [구조체 포인터](pages/lec07/03.md)
+  * [함수를 포함한 구조체](pages/lec07/04.md)
+  * [공용체와 열거형](pages/lec07/05.md)
+  * [사용자정의 자료형(typedef)](pages/lec07/06.md)
+
+* [전처리기, 소스의 모듈화](pages/lec08/01.md)
+  * [전처리기와 매크로](pages/lec08/01.md)
+  * [소스의 모듈화](pages/lec08/02.md)
